@@ -19,6 +19,8 @@ i = 0
 while i < titles.length
   titles[i].style.display = 'none'
   i++
+attribution = document.querySelector(".attribution-container")
+attribution.style.display = "none"
 container = document.querySelector('#main-content-container .content-container.lyrics')
 container.style.margin = '0px'
 lyricBlocks = document.querySelectorAll('#main-content-container .content-container.lyrics p')

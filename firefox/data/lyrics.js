@@ -1,5 +1,5 @@
 (function() {
-  var container, getLongestLine, getTextWidth, i, lyricBlocks, node, p, text, textNode, titles, width;
+  var attribution, container, getLongestLine, getTextWidth, i, lyricBlocks, node, p, text, textNode, titles, width;
 
   getTextWidth = function(text) {
     var canvas, context, metrics;
@@ -31,6 +31,10 @@
     titles[i].style.display = 'none';
     i++;
   }
+
+  attribution = document.querySelector(".attribution-container");
+
+  attribution.style.display = "none";
 
   container = document.querySelector('#main-content-container .content-container.lyrics');
 

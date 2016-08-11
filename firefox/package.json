@@ -1,0 +1,9 @@
+{
+  "name": "lyrics",
+  "title": "lyrics",
+  "id": "jid1-tEaZctazgIDfow",
+  "description": "Filter noise on google lyric pages",
+  "author": "Jeremy Woertink",
+  "license": "MIT",
+  "version": "0.2"
+}

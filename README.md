@@ -16,6 +16,8 @@ Install the grunt dependencies
 
 ## FireFox
 
+To use the plugin locally, you must package the extension to create your .xpi file. Then from FireFox, go to `Tools > Add-ons > Extensions`. Click on the gear icon > Debug Add-on. Then load temporary add-on and select your .xpi file.
+
 ### Installation
 
 `brew install mozilla-addon-sdk`
@@ -27,7 +29,7 @@ Install the grunt dependencies
 
 ### Package Extension
 
-`cd firefox &&cfx xpi`
+`cd firefox && cfx xpi`
 
 ## Chrome
 

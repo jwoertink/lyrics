@@ -1,5 +1,7 @@
 module.exports = function(grunt) {
   var appFiles = [
+        'lib/azlyrics.coffee',
+        'lib/googleplay.coffee',
         'lib/init.coffee'                         
       ];
 

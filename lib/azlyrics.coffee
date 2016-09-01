@@ -1,8 +1,11 @@
 class Azlyrics
   
   parse: ->
-    nav = document.querySelector('nav.navbar')
-    nav.parentNode.removeChild(nav)
+    navs = document.querySelectorAll('nav.navbar')
+    for nav in navs
+      nav.parentNode.removeChild(nav)
+    footer = document.querySelector('.footer-wrap')
+    footer.parentNode.removeChild(footer)
     noprints = document.querySelectorAll('.noprint')
     for noprint in noprints
       noprint.parentNode.removeChild(noprint)
@@ -26,11 +29,15 @@ class Azlyrics
     b = container.querySelector('b')
     b.parentNode.removeChild(b)
     container.className = ""
+    text = document.querySelector(".main-page .row div div").innerHTML
+    html = text.replace(/<br>/g, '&nbsp;&mdash;&nbsp;')
+    document.querySelector(".main-page .row div div").innerHTML = html
+    container_divs = document.querySelectorAll('.container')
+    for cont in container_divs
+      cont.style.width = "100%"
+      cont.style.padding = "0 40px"
     #$container.children('br:first').remove()
     br1 = container.querySelect('br:first')
     br1.parentNode.removeChild(br1)
     br2 = container.querySelect('br:first')
     br2.parentNode.removeChild(br2)
-    html = container.querySelector('div').innerHTML.replace(/<br>/g, '&nbsp;&mdash;&nbsp;')
-    container.querySelector('div').innerHTML = html
-
